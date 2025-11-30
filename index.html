@@ -1,3 +1,141 @@
-<h1>DENEME GİTHUB SİTE</h1>
-<a href="https://youtube.com"><button>TEST BUTONU</button></a>
-<p>YUKARDAKİ <span style="color:red;">BUTON YOUTUBE</span> SAYFASINA GİTMEKTEDİR →</p>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Mavi Tasarım</title>
+    <style>
+        /* GENEL SAYFA AYARLARI */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); /* Koyu Mavi Degrade */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* ORTADAKİ KART (CAM EFEKTİ) */
+        .card {
+            background: rgba(255, 255, 255, 0.05); /* Şeffaf beyaz */
+            backdrop-filter: blur(15px); /* Arka planı bulanıklaştırır */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* İnce çerçeve */
+            border-radius: 24px;
+            padding: 40px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* KÜÇÜK ETİKETLER (BADGE) */
+        .badge {
+            background-color: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 6px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* BAŞLIKLAR */
+        h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+            line-height: 1.2;
+            background: linear-gradient(to right, #fff, #93c5fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        /* PARAGRAFLAR */
+        p {
+            color: #cbd5e1; /* Hafif gri-mavi yazı */
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* LİSTE MADDELERİ */
+        ul {
+            padding-left: 20px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* BUTON TASARIMI */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #2563eb, #3b82f6); /* Parlak Mavi */
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px; /* Hap şeklinde buton */
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-sizing: border-box; /* Padding taşmasını engeller */
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        /* ALT BİLGİ */
+        .footer-note {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #64748b;
+        }
+        
+        .footer-note a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <span class="badge">DUYURU</span>
+        <h1>Merhaba, Hoş Geldiniz</h1>
+        <p>
+            Github sayfama yeni bir soluk getirdim. Artık projelerim daha hızlı, daha güvenli ve modern bir yapıda.
+        </p>
+
+        <span class="badge" style="margin-top: 10px;">YENİ SİSTEM</span>
+        <h2>Mavi & Beyaz Tema</h2>
+        <p>Sizler için hazırladığım bu yeni tasarımda neler var?</p>
+        <ul>
+            <li>Tamamen duyarlı (mobil uyumlu) tasarım.</li>
+            <li>Göz yormayan modern mavi tonlar.</li>
+            <li>Hızlı erişim ve kolay kullanım.</li>
+        </ul>
+
+        <a href="https://youtube.com" class="btn">Videoyu İzle</a>
+
+        <p class="footer-note">
+            Sorularınız için <a href="#">buraya tıklayın</a> veya beklemede kalın.
+        </p>
+    </div>
+
+</body>
+</html>
